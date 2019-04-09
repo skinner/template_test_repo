@@ -8,5 +8,5 @@ nodejs_binary(
         "index.js",
         "@binary_tgz_js_deps//:node_modules",
     ],
-    entry_point = "index.js",
+    entry_point = "template_test_repo/index.js",
 )
