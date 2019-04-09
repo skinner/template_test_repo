@@ -1,0 +1,12 @@
+load("@build_bazel_rules_nodejs//:defs.bzl", "nodejs_binary")
+
+nodejs_binary(
+    name = "example",
+    # Every execution of the program gets these arguments added
+    args = ["--node_options=--expose-gc"],
+    data = [
+        "index.js",
+        "@binary_tgz_js_deps//:node_modules",
+    ],
+    entry_point = "index.js",
+)

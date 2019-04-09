@@ -1,0 +1,7 @@
+{
+  "name": "template_test_repo",
+  "version": "1.0.0",
+  "dependencies": {
+    "minimal-package": "./minimal-package-1.0.0.tgz"
+  }
+}
